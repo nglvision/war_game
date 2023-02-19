@@ -1,0 +1,121 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+body {
+  width: 100%;
+  font-family: "Gothic A1", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(22, 109, 41);
+}
+.controller {
+  display: flex;
+}
+h3,
+h4 {
+  color: rgb(253, 253, 251);
+  align-self: center;
+  font-size: 1rem;
+}
+h3 {
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  color: rgb(228, 223, 163);
+}
+button {
+  min-height: 50px;
+  background-color: rgb(228, 223, 163);
+  border: none;
+  border-radius: 3px;
+  padding: 0rem 2rem;
+  font-family: "Gothic A1", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+  color: rgb(22, 109, 41);
+  margin: 1rem;
+  align-self: center;
+}
+#cards {
+  width: 40vw;
+  font-size: 1.2rem;
+}
+
+.cards:active {
+  background-color: white;
+  box-shadow: inset 0 0 1px 0.5px rgb(0, 0, 0);
+}
+
+#cards:disabled {
+  cursor: not-allowed;
+  color: rgba(22, 109, 41, 0.49);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-container {
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.card-slot {
+  width: 175px;
+  min-height: 245px;
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgb(22, 109, 41);
+  border-radius: 10px;
+  margin: 0.8rem;
+}
+.cover {
+  background: url(./img/gamblin.jpg) no-repeat 50% / cover;
+  background-color: rgb(22, 109, 41);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.cards-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.war {
+  color: rgb(228, 223, 163);
+  animation: flash 0.6s ease-in-out alternate infinite;
+  transition: all 0.3s;
+}
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 0.7rem;
+  }
+  .card-slot {
+    width: 130px;
+    min-height: 182px;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Game of War</title>
+  </head>
+  <body>
+    <div class="controller">
+      <button id="new-deck">새 덱 가져오기</button>
+      <h4 id="remaining-cards"></h4>
+    </div>
+    <div class="container">
+      <h3 id="war">GOW</h3>
+      <h4>
+        컴퓨터 점수:
+        <span id="computer-score">0</span>
+      </h4>
+      <div class="cards-container">
+        <div class="card-slot"></div>
+        <div class="card-slot"></div>
+      </div>
+      <h4>
+        내 점수:
+        <span id="my-score">0</span>
+      </h4>
+      <button :active class="cards" id="cards">카드 뽑기</button>
+    </div>
+    <script src="./war.js"></script>
+  </body>
+</html>
