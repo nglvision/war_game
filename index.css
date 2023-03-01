@@ -10,7 +10,6 @@ html {
   transition: all 0.3s;
 }
 body {
-  width: 100%;
   font-family: "Gothic A1", sans-serif;
   display: flex;
   flex-direction: column;
